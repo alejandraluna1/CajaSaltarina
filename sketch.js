@@ -4,7 +4,7 @@ var ball, edges;
 var music;
 
 function preload(){
-    // load sound here
+    // carga aquí el sonido
 }
 
 
@@ -17,11 +17,11 @@ function setup(){
     block2 = createSprite(295,580,200,30);
     block2.shapeColor = "orange";
 
-    //create two more blocks i.e. block3 and block4 here
+    //crea dos bloques más aquí, tales como block3 y block4
 
     ball = createSprite(random(20,750),100, 40,40);
     ball.shapeColor = rgb(255,255,255);
-    //write code to add velocityX and velocityY
+    //escribe el código para agregar velocidadX y velocidadY
 
 }
 
@@ -31,7 +31,7 @@ function draw() {
     ball.bounceOff(edges);
 
     
-    //write code to bounce off ball from the block1 
+    //escribe el código para rebotar la pelota del block1 
     if(block1.isTouching(ball) && ball.bounceOff(block1)){
         ball.shapeColor = "blue";
         music.play();
@@ -41,15 +41,15 @@ function draw() {
 
     if(block2.isTouching(ball)){
         ball.shapeColor = "orange";
-        //write code to set velocityX and velocityY of ball as 0
+        //escribe el código para establecer la velocidadX y velocidadY de la pelota como 0
 
-        //write code to stop music
+        //escribe el código para detener la música
     }
 
-    //write code to bounce off ball from the block3
+    //escribe el código para rebotar la pelota del block3
 
 
-    //write code to bounce off ball from the block4
+    //escribe el código para rebotar la pelota del block4
 
     drawSprites();
 }
